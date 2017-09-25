@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="content-container" class="container">
+        <div class="panel panel-default error-panel">
+            <div class="panel-heading">
+                <span class="error-title">500</span>服务器出错
+            </div>
+            <div class="panel-body">
+                <div class="well">
+                    <p>如果你看到该提示，说明服务器出现了问题。</p>
+                    <p>我们的工程师正拼命修复中。</p>
+                    <p><a href="/?ref=403">返回首页 &gt;</a></p>
+                    <span class="error-500-icon hidden-xs"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

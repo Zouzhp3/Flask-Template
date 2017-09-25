@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include 'header.html' %}
+
+    {% block header_ext %}
+    {% endblock %}
+</head>
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="content-wrap">
+    <!-- content in this page -->
+    {% block content %}
+    {% endblock %}
+</div>
+
+{% include 'footer.html' %}
+
+{% block footer_ext %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# vim cache
+*.swp
+
+# pycharm files
+.idea/
+
+# cpp code
+*.c
+*.cpp
+*.o
+
+# virtualenv
+venv/
+
+# Resource fold
+Lancs/static/resource/*
+
+# migrations
+# migrations/
