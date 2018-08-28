@@ -31,20 +31,21 @@ class Config:
 
 class DevelopmentConfig(Config):
     def __init__(self):
-        pass
-    DEBUG = True
-    # 连接测试环境数据库的URL
+        super().__init__()
+    DEBUG = True         # 调试模式：热更新
+    ENV = 'development'  # 环境配置项，默认为'production'
+
     SQLALCHEMY_DATABASE_URI = (os.environ.get('DEV_DATABASE_URL') or
-                               'mysql://root:123456@localhost/app_dev')
+                               'mysql+pymysql://root:123456@localhost/app_dev')  # 连接测试环境数据库的URL
 
 
 class ProductionConfig(Config):
     def __init__(self):
-        pass
+        super().__init__()
     DEBUG = False
-    # 连接生产环境数据库的URL
+    ENV = 'production'
     SQLALCHEMY_DATABASE_URI = (os.environ.get('PRO_DATABASE_URL') or
-                               'mysql://root:123456@localhost/app_pro')
+                               'mysql+pymysql://root:123456@localhost/app_pro')  # 连接生产环境数据库的URL
 
 
 config = {
