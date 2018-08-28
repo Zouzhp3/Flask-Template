@@ -20,4 +20,4 @@ venv/
 APP/static/resource/*
 
 # migrations
-# migrations/
+migrations/
