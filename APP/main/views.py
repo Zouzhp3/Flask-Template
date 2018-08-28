@@ -6,7 +6,7 @@ from flask import render_template
 
 @main.route('/')
 def index():
-    return render_template("main/index.html", title=u"index")
+    return render_template("main/index.html", title="index")
 
 
 @main.app_errorhandler(404)

@@ -46,6 +46,7 @@ class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = (os.environ.get('PRO_DATABASE_URL') or
                                'mysql://root:123456@localhost/app_pro')
 
+
 config = {
     'development': DevelopmentConfig,
     'production': ProductionConfig,
