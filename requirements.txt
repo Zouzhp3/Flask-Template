@@ -1,11 +1,9 @@
 alembic==1.0.0
 asn1crypto==0.24.0
-Babel==2.6.0
 cffi==1.11.5
 click==6.7
 cryptography==2.3.1
 Flask==1.0.2
-Flask-Babel==0.11.2
 Flask-Login==0.4.1
 Flask-Migrate==2.2.1
 Flask-Script==2.0.6
